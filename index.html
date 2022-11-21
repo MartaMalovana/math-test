@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Let's count!</h1>
+    <form action="operation" class="operation">
+        <fieldset class="radio">
+            <legend>What do you want to do?</legend>
+            <label>
+                <input type="radio" name="operation" value="add" checked />
+                ADD
+            </label>
+            <label>
+                <input type="radio" name="operation" value="sub" />
+                SUBTRACT
+            </label>
+            <label>
+                <input type="radio" name="operation" value="mult" />
+                MULTIPLY
+            </label>
+            <label>
+                <input type="radio" name="operation" value="div" />
+                DIVISE
+            </label>
+        </fieldset>
+        <fieldset class="numbers">
+            <legend>Enter some numbers for this operation</legend>
+            <label>
+                Enter first number
+                <input class="first-num" type="text" placeholder="10" title="Only numbers" pattern="[0-9]" required/>
+            </label>
+            <label>
+                Enter second number
+                <input class="second-num" type="text" placeholder="2" title="Only numbers" pattern="[0-9]" required />
+            </label>
+        </fieldset>
+        <button type="submit" class="count">COUNT</button>
+    </form>
+        <p class="result"></p>
+
+    <script src="./index.js"></script>
+</body>
+</html>

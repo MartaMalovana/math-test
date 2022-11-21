@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+}
+
+.numbers {
+    margin-top: 30px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #7df9ff;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #fdfe02;
+}
+
+.result {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+label {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 765px) {
+    form {
+        max-width: 600px;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
